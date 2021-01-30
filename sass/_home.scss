@@ -1,0 +1,202 @@
+
+div ul .fas{
+    font-size: 30px;
+    
+}
+
+div img {
+    width: 45px;
+}
+.nav_home{
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+    opacity: 0.8;
+    background-color: rgb(201, 196, 196);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 7%;
+    z-index: 1;
+
+    & img {
+        width: 45px;
+    }
+}
+div input {
+    width: 150px;
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    position: relative;
+    left: 1%;
+    bottom: 15px;
+}
+div button {
+    text-align: center;
+    position: relative;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    left: 2%;
+    bottom: 18px;
+    opacity: 0.7;
+}
+div button .fas{
+    width: 70px;
+    height: 20px;
+    position: relative;
+    top: 3px;
+}
+.main-nav{
+    display: inline-block;
+    margin-left: 40px;
+}
+div ul li {
+    display:  inline-block;
+    position: relative;
+    margin-left: 120px;
+    bottom: 11px;
+}
+div ul li:hover{
+    border-bottom: 2px solid blue;
+}
+/* Data user */
+.user{
+    display: none;
+    position: flex;
+     float: right;
+     margin-right: 80px;
+     margin-top: 15px;
+}
+
+.user img {
+     width: 35px;
+     height: 40px;
+    position: relative;
+    bottom: 12px;
+    margin-right: 10px;
+    border-radius: 20%;
+}
+.user p {
+    float: right;
+}
+.users-story p {
+    font-family: 'Libre Baskerville',  italic;
+    font-size: larger;
+    padding-top: 20px;
+}
+.users-story{
+    text-align: center;
+    margin-top: 70px;
+}
+.users-story img{
+    padding-top: 10px;
+    width: 70%;
+    height: 50%;
+    border-radius: 20px;
+}
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1;
+    padding-top: 100px; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 150%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0)  rgba(0,0,0,0.9); 
+    /* background-color: rgba(0,0,0,0.9); */
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+  
+  
+.close {
+    position: absolute;
+    cursor: pointer;
+    top: 15px;
+    right: 30px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+  
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.package-story {
+    position: relative;
+    left: 32%;
+    width: 500px;
+    box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
+}
+.users-story button .fas {   
+    color: rgb(175, 175, 175);
+    border: none;
+}
+.btn-allbuttons span {
+    display: none;
+}
+.textarea{
+    border: 1px solid #ccc;
+    font-size: inherit;
+    padding: 1px 6px; 
+    display: block;
+    position: relative;
+    text-align: left;
+    left: 33%;
+    top: 15px;
+    width: 50%;
+    box-shadow: -1px 3px 3px 4px rgb(59, 59, 255);
+    overflow: hidden;
+    resize: none;
+    min-height: 40px;
+    line-height: 20px;
+    border-radius: 20px;
+}
+.textarea:focus {
+    outline: none;
+}
+.btn-allbuttons{
+    border: none;
+    margin-right: 60px;
+    margin-top: 20px;
+}
+.btn-like,.btn-comments,.btn-unlike{
+    visibility: visible;
+    padding-left: 20%;
+    background-color: white;
+    border: none;
+    font-size: 25px;
+    cursor: pointer;
+}

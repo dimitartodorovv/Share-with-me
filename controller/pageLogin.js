@@ -7,11 +7,9 @@ router.get('/', (req,res) => {
     res.render('loginPage');
 });
 
-router.post('/', (req,res) => {
+router.post('/login', (req,res) => {
 
 });
-router.get('/registration', (req,res) => {
-    res.render('registration')
-})
+
 
 module.exports = router;
