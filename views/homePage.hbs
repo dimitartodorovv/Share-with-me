@@ -9,6 +9,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="HandheldFriendly" content="true">
     <link rel="stylesheet" href="/css/main.css">
+    <script src="/js/action.js" defer></script>
     <title>Share with me</title>
 </head>
 
@@ -24,32 +25,49 @@
                 <li><a href=":;"><i class="fas fa-users"></i></a></li>
                 <li><a href=":;"><i class="fas fa-users"></i></a></li>
             </ul>
-            <div class="user">
-                <img src="" alt="">
-                <p></p>
-            </div>
+            <ul class="user-nav">
+                <li><a href=":;"><i class="far fa-user-circle"></i></a></li>
+                <li class="dropdown">
+                    <a href=":;" class="dropdown-btn"><i class="fas fa-cog"></i></a>
+                    <div class="dropdown-menu">
+                        <a href="">Help &amp; Support</a>
+                        <a href="">Display &amp; Accessability</a>
+                        <a href="">Give Feedback</a>
+                        <a href="">Log Out</a>
+                    </div>
+                </li>
+            </ul>
         </div>
     </header>
     <main class="data-users">
+        <div class="tool_section">
+            <a href="">Profile</a>
+            <a href="">Friends</a>
+            <a href="">Share you experience</a>
+            <a href="">Videos</a>
+        </div>
         <div class="package-story">
-            <div class="users-story">
-                <p>This is my picture</p>
+            <div class="users-storis">
+                <h2>This is my picture</h2>
                 <img class="img-users" src="/img/pexels-photo-2179172.jpeg" alt="">
-                <div id="myModal" class="modal">
+                <div id="myModal" class="img-modal">
                     <span class="close">&times;</span>
                     <img class="modal-content" id="img01">
-                    <div id="caption"></div>
+                    <div class="caption"></div>
                 </div>
                 <div class="comment">
-                    <p>asdasddddddddddd</p>
+                    <p>comments comming from here</p>
                 </div>
                 <div class="btn-allbuttons">
-                    <button class="btn-like"><i class="fas fa-thumbs-up"></i></button>
-                    <button class="btn-comments"><i class="fas fa-comments"></i></button>
+                    <button class="btn-like"><i class="fas fa-thumbs-up" ></i></button>
+                    <button class="btn-comments"><i class="fas fa-comments" data-comm="comment"></i></button>
                     <button class="btn-unlike"><i class="fas fa-thumbs-down"></i></button>
-                    <span class="textarea" role="textbox" contenteditable></span>
+                    <form action="">
+                    <textarea class="textarea-comments" ></textarea>
+                    </form>
                 </div>
             </div>
+            
         </div>
     </main>
 
