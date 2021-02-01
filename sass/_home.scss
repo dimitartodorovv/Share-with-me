@@ -270,14 +270,44 @@
         & span:focus {
             outline: none;
         }
-}
 
-.btn-like,.btn-comments,.btn-unlike{
-            visibility: visible;
+        & button {
             padding-left: 20%;
             background-color: white;
             border: none;
             font-size: 25px;
             cursor: pointer;
+           
+        }
+
+        & .fas {
+            @include transition-color-icon
+        }
+
+        & .fa-thumbs-up:hover {
+            color: green;
+        }
+
+        & .fa-comments:hover {
+            color: orange;
+        }
+
+        & .fa-thumbs-down:hover {
+            color: red;
+        }
 }
-        
+
+// .btn-like,
+// .btn-comments,
+// .btn-unlike{
+//             visibility: visible;
+          
+
+            
+// }
+
+.btn-like:hover
+,.btn-comments:hover
+,.btn-unlike:hover {
+        color: black;
+}
