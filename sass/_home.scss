@@ -150,15 +150,24 @@
 }
 
 .data-users {
-    display: flex;
+    display: grid;
+    gap: 24px;
+    grid-template-columns: repeat(10, 1fr);
     flex-direction: row;
     margin-top: 80px;
 }
 
 .tool_section {
+    position: fixed;
     display: flex;
     flex-direction: column;
-    width: fit-content;  
+    width: fit-content;
+    grid-column: 1 / 3;
+    margin-left: 10px;
+    
+    & a {
+        padding-bottom: 20px;
+    }
 }
 
 .package-story {
@@ -166,12 +175,16 @@
     // box-shadow: 12px 0 15px -4px rgba(31, 73, 125, 0.8), -12px 0 8px -4px rgba(31, 73, 125, 0.8);
     width: 500px;
     height: 80vh;
+    grid-column: 3 / 8;
+    align-items: center;
 }
 
 .users-storis {
     display: grid;
     grid-template-rows: auto 1fr auto;
-    height: 100vh;
+    height: 120vh;
+    row-gap: 20px;
+    margin-bottom: 20px;
   
     & h2 {
         text-align: center;
@@ -180,6 +193,7 @@
         height: 100%;
         width: 100%;
         align-items: center;
+        border-radius: 12px;
         text-align: center;
     }
 
@@ -249,9 +263,6 @@
 }
 
 .btn-allbuttons {
-    // margin-right: 60px;
-    // margin-top: 20px;
-    margin: 0;
         
         & textarea {
                 display: none;
@@ -296,15 +307,6 @@
             color: red;
         }
 }
-
-// .btn-like,
-// .btn-comments,
-// .btn-unlike{
-//             visibility: visible;
-          
-
-            
-// }
 
 .btn-like:hover
 ,.btn-comments:hover
