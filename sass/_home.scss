@@ -150,12 +150,12 @@
 }
 
 .data-users {
-    display: grid;
-    gap: 24px;
-    grid-template-columns: repeat(10, 1fr);
-    flex-direction: row;
-    margin-top: 80px;
-}
+        display: grid;
+        gap: 24px;
+        grid-template-columns: repeat(10, 1fr);
+        flex-direction: row;
+        margin-top: 80px;
+    }
 
 .tool_section {
     position: fixed;

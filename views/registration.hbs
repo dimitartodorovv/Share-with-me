@@ -5,19 +5,18 @@
                 <h1>Share with me</h1>
             </div>
             <p class="paragraph">Register to see photos and videos <br> from your friends.</p>
-            <div class="field">
-                <input type="text" class="email-field" placeholder="Email adress">
-            </div>
-            <div class="field">
-                <input type="password" class="pass-field" placeholder="Password">
-            </div>
-            <div class="field">
-                <input type="password" class="repPass-field" placeholder="Repeat Password">
-            </div>
-            <p class="check-pass"></p>
-            <div class="btn-reg">
-                <a class="btn-registration">Forward</a>
-            </div>
+            <form  method="POST">
+                <div class="field">
+                    <input type="text" class="email-field" placeholder="Email adress" name="email">           
+                    <input type="text" class="email-field" placeholder="Username" name="username">           
+                    <input type="password" class="pass-field" placeholder="Password" name="password">          
+                    <input type="password" class="repPass-field" placeholder="Repeat Password" name="rePassword">  
+                    {{#if err}}    
+                <span class="check-pass">{{message}}</span>  
+                {{/if}}     
+                    <button type="submit" class="btn-registration">Forward</button>
+                </div>
+            </form>
             <p class="secondParag">When you register, you agree to our Terms . Learn <br>how we collect, use and share
                 your <br>data in our Data Policy , and how we use cookies and similar <br>technologies in our Cookie
                 Policy .</p>

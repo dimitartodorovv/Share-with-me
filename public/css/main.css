@@ -68,25 +68,32 @@
   color: #ec9a00;
 }
 
-.user-name {
-  text-align: center;
-  margin-top: 15px;
+.login-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.user-name input, .password input {
+.login-form input {
+  margin: 20px;
   width: 200px;
-  height: 30px;
+  height: 40px;
   border-radius: 5px;
-}
-
-.password {
-  margin-top: 30px;
-  text-align: center;
 }
 
 .identifier {
   border: none;
-  height: 1px;
+  height: 3px;
   width: 280px;
   color: #333;
   margin-left: 35px;
@@ -104,14 +111,6 @@
   position: relative;
   top: 20%;
   font-size: larger;
-}
-
-.userName {
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.705);
-}
-
-.button-login {
   border: 1px solid black;
   font-weight: bold;
   width: 200px;
@@ -120,10 +119,13 @@
   border-radius: 5px;
   text-align: center;
   background-color: #41bbd6c2;
-  position: relative;
-  left: 21%;
   border-bottom: 2px solid black;
   cursor: pointer;
+}
+
+.userName {
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.705);
 }
 
 .button-login:hover {
@@ -188,20 +190,31 @@
   text-align: center;
 }
 
-.field, .btn-reg, .paragraph {
-  margin-bottom: 20px;
-  padding-bottom: 30px;
-  position: relative;
+.field {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 40px;
   text-align: center;
 }
 
 .field input {
-  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 40px;
 }
 
 .paragraph {
+  text-align: center;
   font-size: 18px;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .secondParag {
@@ -216,20 +229,6 @@
   border-radius: 5px;
 }
 
-.btn-reg {
-  border: 1px solid black;
-  font-weight: bold;
-  width: 80%;
-  height: 45px;
-  margin-top: 40px;
-  border-radius: 5px;
-  text-align: center;
-  background-color: #41bbd6c2;
-  position: relative;
-  left: 10%;
-  cursor: pointer;
-}
-
 .btn-reg:hover {
   background-color: #91e4f7d8;
 }
@@ -239,13 +238,44 @@
   color: white;
   position: relative;
   top: 70%;
+  border: 1px solid black;
+  font-weight: bold;
+  width: 80%;
+  height: 45px;
+  margin-top: 40px;
+  border-radius: 5px;
+  text-align: center;
+  background-color: #41bbd6c2;
+  cursor: pointer;
 }
 
 .check-pass {
-  display: none;
+  -webkit-animation: fadeOut 1s forwards;
+          animation: fadeOut 1s forwards;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+  width: auto;
+  overflow: hidden;
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
   color: red;
+}
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
 }
 
 .nav_home {
@@ -329,8 +359,8 @@
 
 .main-nav .fas {
   font-size: 30px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .main-nav .fas:hover {
@@ -370,8 +400,8 @@
 
 .user-nav .far, .user-nav .fas {
   font-size: 30px;
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .user-nav .far:hover, .user-nav .fas:hover {
@@ -587,8 +617,8 @@
 }
 
 .btn-allbuttons .fas {
-  -webkit-transition: all 1s;
-  transition: all 1s;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .btn-allbuttons .fa-thumbs-up:hover {

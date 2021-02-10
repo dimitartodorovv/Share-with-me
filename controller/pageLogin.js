@@ -7,8 +7,8 @@ router.get('/', (req,res) => {
     res.render('loginPage');
 });
 
-router.post('/login', (req,res) => {
-
+router.post('/', (req,res) => {
+        console.log(req.body);
 });
 
 

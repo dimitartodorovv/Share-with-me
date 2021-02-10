@@ -46,22 +46,23 @@
 .title-log {
     color: rgb(236, 154, 0);
 }
-.user-name{
-    text-align: center;
-    margin-top: 15px;
-}
-.user-name input,.password input{
-    width: 200px;
-    height: 30px;
-    border-radius: 5px;
-}
-.password {
-    margin-top: 30px;
-    text-align: center;
+.login-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    & input{
+        margin: 20px;
+        width: 200px;
+        height: 40px;
+        border-radius: 5px;
+
+    }
 }
 .identifier{
     border: none;
-    height: 1px;
+    height: 3px;
     width: 280px;
     color: #333;
     margin-left: 35px;
@@ -77,12 +78,6 @@
     position: relative;
     top: 20%;
     font-size: larger;
-}
-.userName {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.705);
-}
-.button-login {
     border: 1px solid black;
     font-weight: bold;
     width: 200px;
@@ -91,11 +86,14 @@
     border-radius: 5px;
     text-align: center;
     background-color:  $primary-color;
-    position: relative;
-    left: 21%;
     border-bottom: 2px solid black;
     cursor: pointer;
 }
+.userName {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.705);
+}
+
 .button-login:hover {
     background-color: #91e4f7d8;
 }
